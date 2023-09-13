@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>行业指标监控</title>
+    <style>
+        
+        .title{
+            margin:auto; 
+            display:block;
+            
+            }
+        
+        .image_row {
+            width: 100%; /* 每行宽度100%
+            float: top; /* 浮动以实现多列布局 */
+            box-sizing: border-box; /* 包含边框在内的盒子模型 */
+            padding: 1px; /* 设置每列内部的内边距 */
+        }
+        
+        
+        .industry_image {
+            max-width: 50%; /* 设置图片最大宽度为行长度的50% */
+            float:left;
+        
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 class="title">行业指标监控</h1>
+    <label for="industry_select">选择行业：</label>
+    <select id="industry_select">
+        <option value="all">所有行业</option>
+        <option value="通信(申万)">通信(申万)</option>
+        <option value="银行(申万)">银行(申万)</option>
+        <option value="计算机(申万)">计算机(申万)</option>
+        <option value="交通运输(申万)">交通运输(申万)</option>
+        <option value="家用电器(申万)">家用电器(申万)</option>
+        <option value="社会服务(申万)">社会服务(申万)</option>
+        <option value="公用事业(申万)">公用事业(申万)</option>
+        <option value="商贸零售(申万)">商贸零售(申万)</option>
+        <option value="基础化工(申万)">基础化工(申万)</option>
+        <option value="医药生物(申万)">医药生物(申万)</option>
+        <option value="纺织服饰(申万)">纺织服饰(申万)</option>
+        <option value="农林牧渔(申万)">农林牧渔(申万)</option>
+        <option value="电力设备(申万)">电力设备(申万)</option>
+        <option value="综合(申万)">综合(申万)</option>
+        <option value="食品饮料(申万)">食品饮料(申万)</option>
+        <option value="机械设备(申万)">机械设备(申万)</option>
+        <option value="有色金属(申万)">有色金属(申万)</option>
+        <option value="建筑材料(申万)">建筑材料(申万)</option>
+        <option value="煤炭(申万)">煤炭(申万)</option>
+        <option value="非银金融(申万)">非银金融(申万)</option>
+        <option value="传媒(申万)">传媒(申万)</option>
+        <option value="建筑装饰(申万)">建筑装饰(申万)</option>
+        <option value="石油石化(申万)">石油石化(申万)</option>
+        <option value="环保(申万)">环保(申万)</option>
+        <option value="国防军工(申万)">国防军工(申万)</option>
+        <option value="美容护理(申万)">美容护理(申万)</option>
+        <option value="钢铁(申万)">钢铁(申万)</option>
+        <option value="电子(申万)">电子(申万)</option>
+        <option value="轻工制造(申万)">轻工制造(申万)</option>
+        <option value="房地产(申万)">房地产(申万)</option>
+        <option value="汽车(申万)">汽车(申万)</option>
+
+    </select>
+    <div id="image_container">
+        <div class="image_row">
+            <img src="未分行业图片\交通运输(申万)-PB.png" alt="交通运输(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\交通运输(申万)-PE.png" alt="交通运输(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\交通运输(申万)-PS.png" alt="交通运输(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\交通运输(申万)-因子时序图  -一致预期ROE.png" alt="交通运输(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\交通运输(申万)-因子时序图  -换手率MA20.png" alt="交通运输(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\交通运输(申万)-因子时序图  -盈余惊喜.png" alt="交通运输(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\交通运输(申万)-因子时序图  -超低配比例MA5.png" alt="交通运输(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\传媒(申万)-PB.png" alt="传媒(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\传媒(申万)-PE.png" alt="传媒(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\传媒(申万)-PS.png" alt="传媒(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\传媒(申万)-因子时序图  -一致预期ROE.png" alt="传媒(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\传媒(申万)-因子时序图  -换手率MA20.png" alt="传媒(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\传媒(申万)-因子时序图  -盈余惊喜.png" alt="传媒(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\传媒(申万)-因子时序图  -超低配比例MA5.png" alt="传媒(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\公用事业(申万)-PB.png" alt="公用事业(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\公用事业(申万)-PE.png" alt="公用事业(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\公用事业(申万)-PS.png" alt="公用事业(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\公用事业(申万)-因子时序图  -一致预期ROE.png" alt="公用事业(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\公用事业(申万)-因子时序图  -换手率MA20.png" alt="公用事业(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\公用事业(申万)-因子时序图  -超低配比例MA5.png" alt="公用事业(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\农林牧渔(申万)-PB.png" alt="农林牧渔(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\农林牧渔(申万)-PE.png" alt="农林牧渔(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\农林牧渔(申万)-PS.png" alt="农林牧渔(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\农林牧渔(申万)-因子时序图  -一致预期ROE.png" alt="农林牧渔(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\农林牧渔(申万)-因子时序图  -换手率MA20.png" alt="农林牧渔(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\农林牧渔(申万)-因子时序图  -盈余惊喜.png" alt="农林牧渔(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\农林牧渔(申万)-因子时序图  -超低配比例MA5.png" alt="农林牧渔(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\医药生物(申万)-PB.png" alt="医药生物(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\医药生物(申万)-PE.png" alt="医药生物(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\医药生物(申万)-PS.png" alt="医药生物(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\医药生物(申万)-因子时序图  -一致预期ROE.png" alt="医药生物(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\医药生物(申万)-因子时序图  -换手率MA20.png" alt="医药生物(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\医药生物(申万)-因子时序图  -盈余惊喜.png" alt="医药生物(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\医药生物(申万)-因子时序图  -超低配比例MA5.png" alt="医药生物(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\商贸零售(申万)-PB.png" alt="商贸零售(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\商贸零售(申万)-PE.png" alt="商贸零售(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\商贸零售(申万)-PS.png" alt="商贸零售(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\商贸零售(申万)-因子时序图  -一致预期ROE.png" alt="商贸零售(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\商贸零售(申万)-因子时序图  -换手率MA20.png" alt="商贸零售(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\商贸零售(申万)-因子时序图  -盈余惊喜.png" alt="商贸零售(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\商贸零售(申万)-因子时序图  -超低配比例MA5.png" alt="商贸零售(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\国防军工(申万)-PB.png" alt="国防军工(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\国防军工(申万)-PE.png" alt="国防军工(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\国防军工(申万)-PS.png" alt="国防军工(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\国防军工(申万)-因子时序图  -一致预期ROE.png" alt="国防军工(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\国防军工(申万)-因子时序图  -换手率MA20.png" alt="国防军工(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\国防军工(申万)-因子时序图  -盈余惊喜.png" alt="国防军工(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\国防军工(申万)-因子时序图  -超低配比例MA5.png" alt="国防军工(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\基础化工(申万)-PB.png" alt="基础化工(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\基础化工(申万)-PE.png" alt="基础化工(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\基础化工(申万)-PS.png" alt="基础化工(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\基础化工(申万)-因子时序图  -一致预期ROE.png" alt="基础化工(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\基础化工(申万)-因子时序图  -换手率MA20.png" alt="基础化工(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\基础化工(申万)-因子时序图  -盈余惊喜.png" alt="基础化工(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\基础化工(申万)-因子时序图  -超低配比例MA5.png" alt="基础化工(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\家用电器(申万)-PB.png" alt="家用电器(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\家用电器(申万)-PE.png" alt="家用电器(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\家用电器(申万)-PS.png" alt="家用电器(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\家用电器(申万)-因子时序图  -一致预期ROE.png" alt="家用电器(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\家用电器(申万)-因子时序图  -换手率MA20.png" alt="家用电器(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\家用电器(申万)-因子时序图  -盈余惊喜.png" alt="家用电器(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\家用电器(申万)-因子时序图  -超低配比例MA5.png" alt="家用电器(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑材料(申万)-PB.png" alt="建筑材料(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑材料(申万)-PE.png" alt="建筑材料(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑材料(申万)-PS.png" alt="建筑材料(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑材料(申万)-因子时序图  -一致预期ROE.png" alt="建筑材料(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑材料(申万)-因子时序图  -换手率MA20.png" alt="建筑材料(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑材料(申万)-因子时序图  -盈余惊喜.png" alt="建筑材料(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑材料(申万)-因子时序图  -超低配比例MA5.png" alt="建筑材料(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑装饰(申万)-PB.png" alt="建筑装饰(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑装饰(申万)-PE.png" alt="建筑装饰(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑装饰(申万)-PS.png" alt="建筑装饰(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑装饰(申万)-因子时序图  -一致预期ROE.png" alt="建筑装饰(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑装饰(申万)-因子时序图  -换手率MA20.png" alt="建筑装饰(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\建筑装饰(申万)-因子时序图  -盈余惊喜.png" alt="建筑装饰(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\建筑装饰(申万)-因子时序图  -超低配比例MA5.png" alt="建筑装饰(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\房地产(申万)-PB.png" alt="房地产(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\房地产(申万)-PE.png" alt="房地产(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\房地产(申万)-PS.png" alt="房地产(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\房地产(申万)-因子时序图  -一致预期ROE.png" alt="房地产(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\房地产(申万)-因子时序图  -换手率MA20.png" alt="房地产(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\房地产(申万)-因子时序图  -盈余惊喜.png" alt="房地产(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\房地产(申万)-因子时序图  -超低配比例MA5.png" alt="房地产(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\有色金属(申万)-PB.png" alt="有色金属(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\有色金属(申万)-PE.png" alt="有色金属(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\有色金属(申万)-PS.png" alt="有色金属(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\有色金属(申万)-因子时序图  -一致预期ROE.png" alt="有色金属(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\有色金属(申万)-因子时序图  -换手率MA20.png" alt="有色金属(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\有色金属(申万)-因子时序图  -盈余惊喜.png" alt="有色金属(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\有色金属(申万)-因子时序图  -超低配比例MA5.png" alt="有色金属(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\机械设备(申万)-PB.png" alt="机械设备(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\机械设备(申万)-PE.png" alt="机械设备(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\机械设备(申万)-PS.png" alt="机械设备(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\机械设备(申万)-因子时序图  -一致预期ROE.png" alt="机械设备(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\机械设备(申万)-因子时序图  -换手率MA20.png" alt="机械设备(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\机械设备(申万)-因子时序图  -盈余惊喜.png" alt="机械设备(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\机械设备(申万)-因子时序图  -超低配比例MA5.png" alt="机械设备(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\汽车(申万)-PB.png" alt="汽车(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\汽车(申万)-PE.png" alt="汽车(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\汽车(申万)-PS.png" alt="汽车(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\汽车(申万)-因子时序图  -一致预期ROE.png" alt="汽车(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\汽车(申万)-因子时序图  -换手率MA20.png" alt="汽车(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\汽车(申万)-因子时序图  -盈余惊喜.png" alt="汽车(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\汽车(申万)-因子时序图  -超低配比例MA5.png" alt="汽车(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\煤炭(申万)-PB.png" alt="煤炭(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\煤炭(申万)-PE.png" alt="煤炭(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\煤炭(申万)-PS.png" alt="煤炭(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\煤炭(申万)-因子时序图  -一致预期ROE.png" alt="煤炭(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\煤炭(申万)-因子时序图  -换手率MA20.png" alt="煤炭(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\煤炭(申万)-因子时序图  -盈余惊喜.png" alt="煤炭(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\煤炭(申万)-因子时序图  -超低配比例MA5.png" alt="煤炭(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\环保(申万)-PB.png" alt="环保(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\环保(申万)-PE.png" alt="环保(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\环保(申万)-PS.png" alt="环保(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\环保(申万)-因子时序图  -一致预期ROE.png" alt="环保(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\环保(申万)-因子时序图  -换手率MA20.png" alt="环保(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\环保(申万)-因子时序图  -超低配比例MA5.png" alt="环保(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电力设备(申万)-PB.png" alt="电力设备(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电力设备(申万)-PE.png" alt="电力设备(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电力设备(申万)-PS.png" alt="电力设备(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电力设备(申万)-因子时序图  -一致预期ROE.png" alt="电力设备(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电力设备(申万)-因子时序图  -换手率MA20.png" alt="电力设备(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电力设备(申万)-因子时序图  -盈余惊喜.png" alt="电力设备(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电力设备(申万)-因子时序图  -超低配比例MA5.png" alt="电力设备(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电子(申万)-PB.png" alt="电子(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电子(申万)-PE.png" alt="电子(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电子(申万)-PS.png" alt="电子(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电子(申万)-因子时序图  -一致预期ROE.png" alt="电子(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电子(申万)-因子时序图  -换手率MA20.png" alt="电子(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\电子(申万)-因子时序图  -盈余惊喜.png" alt="电子(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\电子(申万)-因子时序图  -超低配比例MA5.png" alt="电子(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\石油石化(申万)-PB.png" alt="石油石化(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\石油石化(申万)-PE.png" alt="石油石化(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\石油石化(申万)-PS.png" alt="石油石化(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\石油石化(申万)-因子时序图  -一致预期ROE.png" alt="石油石化(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\石油石化(申万)-因子时序图  -换手率MA20.png" alt="石油石化(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\石油石化(申万)-因子时序图  -盈余惊喜.png" alt="石油石化(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\石油石化(申万)-因子时序图  -超低配比例MA5.png" alt="石油石化(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\社会服务(申万)-PB.png" alt="社会服务(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\社会服务(申万)-PE.png" alt="社会服务(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\社会服务(申万)-PS.png" alt="社会服务(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\社会服务(申万)-因子时序图  -一致预期ROE.png" alt="社会服务(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\社会服务(申万)-因子时序图  -换手率MA20.png" alt="社会服务(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\社会服务(申万)-因子时序图  -超低配比例MA5.png" alt="社会服务(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\纺织服饰(申万)-PB.png" alt="纺织服饰(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\纺织服饰(申万)-PE.png" alt="纺织服饰(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\纺织服饰(申万)-PS.png" alt="纺织服饰(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\纺织服饰(申万)-因子时序图  -一致预期ROE.png" alt="纺织服饰(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\纺织服饰(申万)-因子时序图  -换手率MA20.png" alt="纺织服饰(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\纺织服饰(申万)-因子时序图  -超低配比例MA5.png" alt="纺织服饰(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\综合(申万)-PB.png" alt="综合(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\综合(申万)-PE.png" alt="综合(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\综合(申万)-PS.png" alt="综合(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\综合(申万)-因子时序图  -一致预期ROE.png" alt="综合(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\综合(申万)-因子时序图  -换手率MA20.png" alt="综合(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\综合(申万)-因子时序图  -超低配比例MA5.png" alt="综合(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\美容护理(申万)-PB.png" alt="美容护理(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\美容护理(申万)-PE.png" alt="美容护理(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\美容护理(申万)-PS.png" alt="美容护理(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\美容护理(申万)-因子时序图  -一致预期ROE.png" alt="美容护理(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\美容护理(申万)-因子时序图  -换手率MA20.png" alt="美容护理(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\美容护理(申万)-因子时序图  -超低配比例MA5.png" alt="美容护理(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\计算机(申万)-PB.png" alt="计算机(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\计算机(申万)-PE.png" alt="计算机(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\计算机(申万)-PS.png" alt="计算机(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\计算机(申万)-因子时序图  -一致预期ROE.png" alt="计算机(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\计算机(申万)-因子时序图  -换手率MA20.png" alt="计算机(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\计算机(申万)-因子时序图  -盈余惊喜.png" alt="计算机(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\计算机(申万)-因子时序图  -超低配比例MA5.png" alt="计算机(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\轻工制造(申万)-PB.png" alt="轻工制造(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\轻工制造(申万)-PE.png" alt="轻工制造(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\轻工制造(申万)-PS.png" alt="轻工制造(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\轻工制造(申万)-因子时序图  -一致预期ROE.png" alt="轻工制造(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\轻工制造(申万)-因子时序图  -换手率MA20.png" alt="轻工制造(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\轻工制造(申万)-因子时序图  -盈余惊喜.png" alt="轻工制造(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\轻工制造(申万)-因子时序图  -超低配比例MA5.png" alt="轻工制造(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\通信(申万)-PB.png" alt="通信(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\通信(申万)-PE.png" alt="通信(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\通信(申万)-PS.png" alt="通信(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\通信(申万)-因子时序图  -一致预期ROE.png" alt="通信(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\通信(申万)-因子时序图  -换手率MA20.png" alt="通信(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\通信(申万)-因子时序图  -盈余惊喜.png" alt="通信(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\通信(申万)-因子时序图  -超低配比例MA5.png" alt="通信(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\钢铁(申万)-PB.png" alt="钢铁(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\钢铁(申万)-PE.png" alt="钢铁(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\钢铁(申万)-PS.png" alt="钢铁(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\钢铁(申万)-因子时序图  -一致预期ROE.png" alt="钢铁(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\钢铁(申万)-因子时序图  -换手率MA20.png" alt="钢铁(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\钢铁(申万)-因子时序图  -盈余惊喜.png" alt="钢铁(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\钢铁(申万)-因子时序图  -超低配比例MA5.png" alt="钢铁(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\银行(申万)-PB.png" alt="银行(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\银行(申万)-PE.png" alt="银行(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\银行(申万)-PS.png" alt="银行(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\银行(申万)-因子时序图  -一致预期ROE.png" alt="银行(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\银行(申万)-因子时序图  -换手率MA20.png" alt="银行(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\银行(申万)-因子时序图  -盈余惊喜.png" alt="银行(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\银行(申万)-因子时序图  -超低配比例MA5.png" alt="银行(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\非银金融(申万)-PB.png" alt="非银金融(申万)-PB.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\非银金融(申万)-PE.png" alt="非银金融(申万)-PE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\非银金融(申万)-PS.png" alt="非银金融(申万)-PS.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\非银金融(申万)-因子时序图  -一致预期ROE.png" alt="非银金融(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\非银金融(申万)-因子时序图  -换手率MA20.png" alt="非银金融(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\非银金融(申万)-因子时序图  -盈余惊喜.png" alt="非银金融(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\非银金融(申万)-因子时序图  -超低配比例MA5.png" alt="非银金融(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\食品饮料(申万)-PB.png" alt="食品饮料(申万)-PB.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\食品饮料(申万)-PE.png" alt="食品饮料(申万)-PE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\食品饮料(申万)-PS.png" alt="食品饮料(申万)-PS.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\食品饮料(申万)-因子时序图  -一致预期ROE.png" alt="食品饮料(申万)-因子时序图  -一致预期ROE.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\食品饮料(申万)-因子时序图  -换手率MA20.png" alt="食品饮料(申万)-因子时序图  -换手率MA20.png" loading="lazy" class="industry_image">
+            <img src="未分行业图片\食品饮料(申万)-因子时序图  -盈余惊喜.png" alt="食品饮料(申万)-因子时序图  -盈余惊喜.png" loading="lazy" class="industry_image">
+        </div>
+        <div class="image_row">
+            <img src="未分行业图片\食品饮料(申万)-因子时序图  -超低配比例MA5.png" alt="食品饮料(申万)-因子时序图  -超低配比例MA5.png" loading="lazy" class="industry_image">
+        </div>
+
+    </div>
+    <div style="clear: both;"></div> <!-- 清除浮动以保证布局正确 -->
+    <script>
+        
+        
+        // 获取选择框
+        var industrySelect = document.getElementById('industry_select');
+        
+        // 获取所有图片
+        var images = document.getElementsByClassName('industry_image');
+        var rows= document.getElementsByClassName('image_row');
+        
+        // 添加事件监听器
+        industrySelect.addEventListener('change', function () {
+            var selectedIndustry = industrySelect.value;
+            
+            // 显示选择行业的图片或者显示所有图片
+            for (var i = 0; i < images.length; i++) {
+                var alt = images[i].getAttribute('alt');
+                if (selectedIndustry === 'all' || alt.includes(selectedIndustry)) {
+                    images[i].style.display = 'inline-block';
+                } else {
+                    images[i].style.display = 'none';
+                }
+            }
+            
+            // 获取所有包含图片的 div 元素
+            var divsWithImages = document.querySelectorAll('div:has(img)');
+            
+            // 遍历每个包含图片的 div
+            divsWithImages.forEach(function (div) {
+                var images = div.querySelectorAll('img');
+                var allImagesHidden = true; // 假设所有图片都隐藏
+                
+                // 检查每个图片的 display 属性
+                images.forEach(function (img) {
+                    if (img.style.display !== 'none') {
+                        allImagesHidden = false; // 如果有任何一个图片不隐藏，则设为 false
+                    }
+                });
+                
+                // 根据结果决定是否隐藏该 div
+                if (allImagesHidden) {
+                    div.style.display = 'none'; // 隐藏该 div
+                } else {
+                    div.style.display = 'block'; // 显示该 div
+                }
+            });
+            
+            
+            
+            // 重新排列显示的图片，保持每行2个
+            //var visibleImages = document.querySelectorAll('.industry_image[style*="display: inline-block"]');
+            //var rows = document.querySelectorAll('.image_row');
+            
+            // 清空列
+            //for (var i = 0; i < columns.length; i++) {
+            //    columns[i].innerHTML = '';
+            //}
+            
+            //var rowIndex = 0;
+            //for (var i = 0; i < visibleImages.length; i++) {
+            //    rows[rowIndex].appendChild(visibleImages[i]);
+            //    rowIndex = (rowIndex + 1) % 2; // 循环列
+            //}
+        
+        });
+    
+    
+    
+    //懒加载函数      
+    function lazyload() {
+    	let viewHeight = document.body.clientHeight //获取可视区高度
+    	let imgs = document.querySelectorAll('img[data-src]')
+    	imgs.forEach((item, index) => {
+    		if (item.dataset.src === "") return
+      
+    		// 用于获得整个页面中某个元素的左，上，右和下分别相对浏览器视窗的位置
+    		let rect = item.getBoundingClientRect()
+    		if (rect.bottom >= 0 && rect.top < viewHeight) {
+    			item.src = item.dataset.src
+    			item.removeAttribute('data-src')
+    		}
+    	})
+    }
+    
+    //给windows绑定onscroll事件
+    window.addEventListener('scroll', lazyload)
+    
+    
+    </script>
+</body>
+</html>
